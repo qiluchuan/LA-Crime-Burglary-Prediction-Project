@@ -1,0 +1,510 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    
+        <script>
+            L_NO_TOUCH = false;
+            L_DISABLE_3D = false;
+        </script>
+    
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.js"></script>
+    <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.9.3/dist/leaflet.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.0/css/all.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/python-visualization/folium/folium/templates/leaflet.awesome.rotate.min.css"/>
+    
+            <meta name="viewport" content="width=device-width,
+                initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
+            <style>
+                #map_93699269292100988307acbbb300e03c {
+                    position: relative;
+                    width: 100.0%;
+                    height: 100.0%;
+                    left: 0.0%;
+                    top: 0.0%;
+                }
+                .leaflet-container { font-size: 1rem; }
+            </style>
+        
+</head>
+<body>
+    
+    
+            <div class="folium-map" id="map_93699269292100988307acbbb300e03c" ></div>
+        
+</body>
+<script>
+    
+    
+            var map_93699269292100988307acbbb300e03c = L.map(
+                "map_93699269292100988307acbbb300e03c",
+                {
+                    center: [34.0522, -118.2437],
+                    crs: L.CRS.EPSG3857,
+                    zoom: 10,
+                    zoomControl: true,
+                    preferCanvas: false,
+                }
+            );
+
+            
+
+        
+    
+            var tile_layer_2a91a09341a7682c9bf2af707df53359 = L.tileLayer(
+                "https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png",
+                {"attribution": "Data by \u0026copy; \u003ca target=\"_blank\" href=\"http://openstreetmap.org\"\u003eOpenStreetMap\u003c/a\u003e, under \u003ca target=\"_blank\" href=\"http://www.openstreetmap.org/copyright\"\u003eODbL\u003c/a\u003e.", "detectRetina": false, "maxNativeZoom": 18, "maxZoom": 18, "minZoom": 0, "noWrap": false, "opacity": 1, "subdomains": "abc", "tms": false}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+            var circle_marker_e74ee2755589bc416bda3d78963f74fc = L.circleMarker(
+                [33.917387655754794, -117.79896344560146],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 20.0, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_fef7f151215fa5ca24f4e33b4a6c3912 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_7977624ed7662891c2c421fb5cc33e6e = $(`<div id="html_7977624ed7662891c2c421fb5cc33e6e" style="width: 100.0%; height: 100.0%;">Central: 50801 crimes</div>`)[0];
+                popup_fef7f151215fa5ca24f4e33b4a6c3912.setContent(html_7977624ed7662891c2c421fb5cc33e6e);
+            
+        
+
+        circle_marker_e74ee2755589bc416bda3d78963f74fc.bindPopup(popup_fef7f151215fa5ca24f4e33b4a6c3912)
+        ;
+
+        
+    
+    
+            var circle_marker_0cf1dadb24e5844ba977eb3df0c8d16d = L.circleMarker(
+                [33.88057625297333, -117.95906821140925],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 18.868132517076436, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_7d0d94c3f1174f6840529ba0a6aa0249 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f0a619787cf26989a27c99f16466ee3c = $(`<div id="html_f0a619787cf26989a27c99f16466ee3c" style="width: 100.0%; height: 100.0%;">77th Street: 47926 crimes</div>`)[0];
+                popup_7d0d94c3f1174f6840529ba0a6aa0249.setContent(html_f0a619787cf26989a27c99f16466ee3c);
+            
+        
+
+        circle_marker_0cf1dadb24e5844ba977eb3df0c8d16d.bindPopup(popup_7d0d94c3f1174f6840529ba0a6aa0249)
+        ;
+
+        
+    
+    
+            var circle_marker_985fe1125859388c9c811d628bf59f5e = L.circleMarker(
+                [33.851348703477036, -117.96049467790924],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 17.368949430129327, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_087f5ea5c35a586eb1ec005059b6b552 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_130ba22955e5f5d83c24b356f6410dc3 = $(`<div id="html_130ba22955e5f5d83c24b356f6410dc3" style="width: 100.0%; height: 100.0%;">Pacific: 44118 crimes</div>`)[0];
+                popup_087f5ea5c35a586eb1ec005059b6b552.setContent(html_130ba22955e5f5d83c24b356f6410dc3);
+            
+        
+
+        circle_marker_985fe1125859388c9c811d628bf59f5e.bindPopup(popup_087f5ea5c35a586eb1ec005059b6b552)
+        ;
+
+        
+    
+    
+            var circle_marker_f9d15d7fdcd85d7756bf41324ea142b8 = L.circleMarker(
+                [33.96773192138498, -118.13490039496713],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 16.6461290132084, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_9a6866d188aecb4b7385e736c156ac1d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_75b804c1801891deacd41f12139e8d36 = $(`<div id="html_75b804c1801891deacd41f12139e8d36" style="width: 100.0%; height: 100.0%;">Southwest: 42282 crimes</div>`)[0];
+                popup_9a6866d188aecb4b7385e736c156ac1d.setContent(html_75b804c1801891deacd41f12139e8d36);
+            
+        
+
+        circle_marker_f9d15d7fdcd85d7756bf41324ea142b8.bindPopup(popup_9a6866d188aecb4b7385e736c156ac1d)
+        ;
+
+        
+    
+    
+            var circle_marker_64658c7205491ec3f5d150275d57e80f = L.circleMarker(
+                [33.82731616692274, -117.38562902562323],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.88708883683392, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_0f40a23b9bb70dd75fb0e244c96def89 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8276faf61b886171fd1ad663fe737870 = $(`<div id="html_8276faf61b886171fd1ad663fe737870" style="width: 100.0%; height: 100.0%;">Hollywood: 40354 crimes</div>`)[0];
+                popup_0f40a23b9bb70dd75fb0e244c96def89.setContent(html_8276faf61b886171fd1ad663fe737870);
+            
+        
+
+        circle_marker_64658c7205491ec3f5d150275d57e80f.bindPopup(popup_0f40a23b9bb70dd75fb0e244c96def89)
+        ;
+
+        
+    
+    
+            var circle_marker_ed7a53903ec06a82b8d392502e120d95 = L.circleMarker(
+                [33.798927307622954, -117.77967361207718],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.281982638137045, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_e87bceddbf38b30d4285c0fc83f6b607 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_92b857de1de94e4159c3c8958affa16b = $(`<div id="html_92b857de1de94e4159c3c8958affa16b" style="width: 100.0%; height: 100.0%;">Southeast: 38817 crimes</div>`)[0];
+                popup_e87bceddbf38b30d4285c0fc83f6b607.setContent(html_92b857de1de94e4159c3c8958affa16b);
+            
+        
+
+        circle_marker_ed7a53903ec06a82b8d392502e120d95.bindPopup(popup_e87bceddbf38b30d4285c0fc83f6b607)
+        ;
+
+        
+    
+    
+            var circle_marker_1d3f391072ba02cdef4390875e7788a8 = L.circleMarker(
+                [33.944811942513475, -117.90001851649355],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 15.121355878821284, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_8cf02cc6fcf5723e34f3411fcf825464 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f857753aaba8b3dc8480e3687146793d = $(`<div id="html_f857753aaba8b3dc8480e3687146793d" style="width: 100.0%; height: 100.0%;">Olympic: 38409 crimes</div>`)[0];
+                popup_8cf02cc6fcf5723e34f3411fcf825464.setContent(html_f857753aaba8b3dc8480e3687146793d);
+            
+        
+
+        circle_marker_1d3f391072ba02cdef4390875e7788a8.bindPopup(popup_8cf02cc6fcf5723e34f3411fcf825464)
+        ;
+
+        
+    
+    
+            var circle_marker_6d2975de45b3feb008353f630517aeb1 = L.circleMarker(
+                [33.920617725717015, -117.95331190204558],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.838684277868545, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_4a1d4aefc605d71eeef24861c99af7e3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fdb308c9c32703106eda17073cfbae70 = $(`<div id="html_fdb308c9c32703106eda17073cfbae70" style="width: 100.0%; height: 100.0%;">Newton: 37691 crimes</div>`)[0];
+                popup_4a1d4aefc605d71eeef24861c99af7e3.setContent(html_fdb308c9c32703106eda17073cfbae70);
+            
+        
+
+        circle_marker_6d2975de45b3feb008353f630517aeb1.bindPopup(popup_4a1d4aefc605d71eeef24861c99af7e3)
+        ;
+
+        
+    
+    
+            var circle_marker_c9e7a0149ad4f6f1a39c6ff030003c85 = L.circleMarker(
+                [34.088035386207444, -118.09571430997424],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.837109505718391, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_8810c9dc000f57b0a35ec6b3ddcfe006 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_915b93df003f86d69e83a6a468ad6caa = $(`<div id="html_915b93df003f86d69e83a6a468ad6caa" style="width: 100.0%; height: 100.0%;">N Hollywood: 37687 crimes</div>`)[0];
+                popup_8810c9dc000f57b0a35ec6b3ddcfe006.setContent(html_915b93df003f86d69e83a6a468ad6caa);
+            
+        
+
+        circle_marker_c9e7a0149ad4f6f1a39c6ff030003c85.bindPopup(popup_8810c9dc000f57b0a35ec6b3ddcfe006)
+        ;
+
+        
+    
+    
+            var circle_marker_278ba46fc85c11518e3bb7d5f9f99f72 = L.circleMarker(
+                [33.93701002209111, -117.9186083862308],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 14.078856715418988, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_c5abd4121e61a6a795e34ad206aae970 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_927e5a0a4abce2663a028e79347018ac = $(`<div id="html_927e5a0a4abce2663a028e79347018ac" style="width: 100.0%; height: 100.0%;">Wilshire: 35761 crimes</div>`)[0];
+                popup_c5abd4121e61a6a795e34ad206aae970.setContent(html_927e5a0a4abce2663a028e79347018ac);
+            
+        
+
+        circle_marker_278ba46fc85c11518e3bb7d5f9f99f72.bindPopup(popup_c5abd4121e61a6a795e34ad206aae970)
+        ;
+
+        
+    
+    
+            var circle_marker_92ec7653479cfb0209f0baeb3855f6d3 = L.circleMarker(
+                [33.96366618177686, -117.92809566440322],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.856813842247199, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_744f637c687b19a88d42264a58f8b252 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_66cb0c4966e59dd34c6aba891bf8b549 = $(`<div id="html_66cb0c4966e59dd34c6aba891bf8b549" style="width: 100.0%; height: 100.0%;">Rampart: 35197 crimes</div>`)[0];
+                popup_744f637c687b19a88d42264a58f8b252.setContent(html_66cb0c4966e59dd34c6aba891bf8b549);
+            
+        
+
+        circle_marker_92ec7653479cfb0209f0baeb3855f6d3.bindPopup(popup_744f637c687b19a88d42264a58f8b252)
+        ;
+
+        
+    
+    
+            var circle_marker_d1912c399f940f6cfa9eda6dfeaf6915 = L.circleMarker(
+                [34.00552972047097, -118.28026005987851],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 13.675715044979428, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_1ea172cde92f774213355b62ed01cff7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_8b91f0ae7e41470bdaf611b93c697c80 = $(`<div id="html_8b91f0ae7e41470bdaf611b93c697c80" style="width: 100.0%; height: 100.0%;">West LA: 34737 crimes</div>`)[0];
+                popup_1ea172cde92f774213355b62ed01cff7.setContent(html_8b91f0ae7e41470bdaf611b93c697c80);
+            
+        
+
+        circle_marker_d1912c399f940f6cfa9eda6dfeaf6915.bindPopup(popup_1ea172cde92f774213355b62ed01cff7)
+        ;
+
+        
+    
+    
+            var circle_marker_05a042353570d55705061e343ada803d = L.circleMarker(
+                [34.05835885925293, -118.07520536804199],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.900533454065865, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_d5298093603c0b161d65bc328ec7a03c = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_c54877d185cb4f833dfcfbf8d804a4ea = $(`<div id="html_c54877d185cb4f833dfcfbf8d804a4ea" style="width: 100.0%; height: 100.0%;">Northeast: 32768 crimes</div>`)[0];
+                popup_d5298093603c0b161d65bc328ec7a03c.setContent(html_c54877d185cb4f833dfcfbf8d804a4ea);
+            
+        
+
+        circle_marker_05a042353570d55705061e343ada803d.bindPopup(popup_d5298093603c0b161d65bc328ec7a03c)
+        ;
+
+        
+    
+    
+            var circle_marker_cde3c393036432a57dffb25fa759a265 = L.circleMarker(
+                [34.102079501772714, -118.18194970454687],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.658805929017145, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_127d9368cdfeb84c41926474e06a1f19 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_4af7ef0832bd3f8fef0e0bb3af2293af = $(`<div id="html_4af7ef0832bd3f8fef0e0bb3af2293af" style="width: 100.0%; height: 100.0%;">Van Nuys: 32154 crimes</div>`)[0];
+                popup_127d9368cdfeb84c41926474e06a1f19.setContent(html_4af7ef0832bd3f8fef0e0bb3af2293af);
+            
+        
+
+        circle_marker_cde3c393036432a57dffb25fa759a265.bindPopup(popup_127d9368cdfeb84c41926474e06a1f19)
+        ;
+
+        
+    
+    
+            var circle_marker_0449321c8dae08caf24a9c2e18b8fd43 = L.circleMarker(
+                [34.1473872767998, -118.38264360212001],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.47928190389953, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_adbdef8ad9fd44c9440abc2e4032ddf5 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_fc31155cd05223b9aa1b3225764f3c57 = $(`<div id="html_fc31155cd05223b9aa1b3225764f3c57" style="width: 100.0%; height: 100.0%;">West Valley: 31698 crimes</div>`)[0];
+                popup_adbdef8ad9fd44c9440abc2e4032ddf5.setContent(html_fc31155cd05223b9aa1b3225764f3c57);
+            
+        
+
+        circle_marker_0449321c8dae08caf24a9c2e18b8fd43.bindPopup(popup_adbdef8ad9fd44c9440abc2e4032ddf5)
+        ;
+
+        
+    
+    
+            var circle_marker_f64204fbbce3876656358db7138f880d = L.circleMarker(
+                [33.7051040551733, -118.05165012104996],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.358811834412709, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_9d139418fef1411a09464d544af01297 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_b35f7a1ae196758aebf94f8f3a17bb79 = $(`<div id="html_b35f7a1ae196758aebf94f8f3a17bb79" style="width: 100.0%; height: 100.0%;">Harbor: 31392 crimes</div>`)[0];
+                popup_9d139418fef1411a09464d544af01297.setContent(html_b35f7a1ae196758aebf94f8f3a17bb79);
+            
+        
+
+        circle_marker_f64204fbbce3876656358db7138f880d.bindPopup(popup_9d139418fef1411a09464d544af01297)
+        ;
+
+        
+    
+    
+            var circle_marker_cac8e32c720ec8cd8944cdf7b615ad3f = L.circleMarker(
+                [34.158799990213986, -118.48486936325678],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.069053758784277, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_0456869f4661a6e241d7d8804b435ae3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_5a507acf884d2be1d0a26b93afaeac07 = $(`<div id="html_5a507acf884d2be1d0a26b93afaeac07" style="width: 100.0%; height: 100.0%;">Topanga: 30656 crimes</div>`)[0];
+                popup_0456869f4661a6e241d7d8804b435ae3.setContent(html_5a507acf884d2be1d0a26b93afaeac07);
+            
+        
+
+        circle_marker_cac8e32c720ec8cd8944cdf7b615ad3f.bindPopup(popup_0456869f4661a6e241d7d8804b435ae3)
+        ;
+
+        
+    
+    
+            var circle_marker_4ca788508ab28311870dc4e2daf60f91 = L.circleMarker(
+                [34.14268065337293, -118.16779494468197],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 12.063148363221197, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_df56ff069d4b87c1a0250983ae7f7ab3 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_0a243d5b80e97fda3bfe66fb31038c76 = $(`<div id="html_0a243d5b80e97fda3bfe66fb31038c76" style="width: 100.0%; height: 100.0%;">Devonshire: 30641 crimes</div>`)[0];
+                popup_df56ff069d4b87c1a0250983ae7f7ab3.setContent(html_0a243d5b80e97fda3bfe66fb31038c76);
+            
+        
+
+        circle_marker_4ca788508ab28311870dc4e2daf60f91.bindPopup(popup_df56ff069d4b87c1a0250983ae7f7ab3)
+        ;
+
+        
+    
+    
+            var circle_marker_b40ad9f06298d37d4c0676ae598f5516 = L.circleMarker(
+                [34.12641339857356, -118.00270047437387],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.867876616602036, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_9f08421d803c48ed71126d72de31bcb7 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_971be629c4131419e578d84d3a71d8c9 = $(`<div id="html_971be629c4131419e578d84d3a71d8c9" style="width: 100.0%; height: 100.0%;">Mission: 30145 crimes</div>`)[0];
+                popup_9f08421d803c48ed71126d72de31bcb7.setContent(html_971be629c4131419e578d84d3a71d8c9);
+            
+        
+
+        circle_marker_b40ad9f06298d37d4c0676ae598f5516.bindPopup(popup_9f08421d803c48ed71126d72de31bcb7)
+        ;
+
+        
+    
+    
+            var circle_marker_10fee0a9f3b2cad6e2fd3f6475eb0665 = L.circleMarker(
+                [33.95520355023353, -117.85867772588406],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 11.2111966299876, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_87974d00d8205b499110a6808ebd06e6 = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_9bef1d0f2da5ff7ea8e08cac9bb5859d = $(`<div id="html_9bef1d0f2da5ff7ea8e08cac9bb5859d" style="width: 100.0%; height: 100.0%;">Hollenbeck: 28477 crimes</div>`)[0];
+                popup_87974d00d8205b499110a6808ebd06e6.setContent(html_9bef1d0f2da5ff7ea8e08cac9bb5859d);
+            
+        
+
+        circle_marker_10fee0a9f3b2cad6e2fd3f6475eb0665.bindPopup(popup_87974d00d8205b499110a6808ebd06e6)
+        ;
+
+        
+    
+    
+            var circle_marker_c058f36281d93e97f69236aa06597b98 = L.circleMarker(
+                [34.15051638222572, -118.03842209201731],
+                {"bubblingMouseEvents": true, "color": "red", "dashArray": null, "dashOffset": null, "fill": true, "fillColor": "red", "fillOpacity": 0.7, "fillRule": "evenodd", "lineCap": "round", "lineJoin": "round", "opacity": 1.0, "radius": 10.01161394460739, "stroke": true, "weight": 3}
+            ).addTo(map_93699269292100988307acbbb300e03c);
+        
+    
+        var popup_c3cf3d6852c16d63fc88ffa0ba38764d = L.popup({"maxWidth": "100%"});
+
+        
+            
+                var html_f6d18d90fb93efdff48d915b2b613df6 = $(`<div id="html_f6d18d90fb93efdff48d915b2b613df6" style="width: 100.0%; height: 100.0%;">Foothill: 25430 crimes</div>`)[0];
+                popup_c3cf3d6852c16d63fc88ffa0ba38764d.setContent(html_f6d18d90fb93efdff48d915b2b613df6);
+            
+        
+
+        circle_marker_c058f36281d93e97f69236aa06597b98.bindPopup(popup_c3cf3d6852c16d63fc88ffa0ba38764d)
+        ;
+
+        
+    
+</script>
+</html>
